@@ -1,1 +1,130 @@
-/* Write your CSS here */
+.previous-match-card-container {
+  background-color: #0f172a;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 390px;
+  width: 28%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 0.5px 1px 1px #ffffff33;
+}
+
+.prev-match-card-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.prev-match-card-competing-team {
+  font-family: Bree Serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 17px;
+  text-align: center;
+}
+
+.prev-match-card-result {
+  font-family: Bree Serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 14.5px;
+}
+
+.prev-match-card-match-status {
+  font-family: Bree Serif;
+
+  font-weight: 100;
+  font-size: 18.5px;
+}
+
+.won-status-class {
+  color: #18ed66;
+}
+
+.lost-status-class {
+  color: #e31a1a;
+}
+
+@media (max-width: 1130px) {
+  .previous-match-card-container {
+    background-color: #0f172a;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 360px;
+    width: 31%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .previous-match-card-container {
+    background-color: #0f172a;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 360px;
+    width: 48%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .previous-match-card-container {
+    height: 315px;
+  }
+
+  .prev-match-card-logo {
+    width: 85px;
+  }
+
+  .prev-match-card-competing-team {
+    font-family: Bree Serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .prev-match-card-result {
+    font-family: Bree Serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 13px;
+  }
+
+  .prev-match-card-match-status {
+    font-family: Bree Serif;
+
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .won-status-class {
+    color: #18ed66;
+  }
+
+  .lost-status-class {
+    color: #e31a1a;
+  }
+}

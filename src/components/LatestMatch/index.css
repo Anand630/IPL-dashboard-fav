@@ -1,1 +1,164 @@
-/* Write your CSS here */
+.latest-match-details-card-container {
+  background-color: #1e293b;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.opponent-team-name-match-date-venue-result-opponent-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 60%;
+}
+
+.opponent-team-name-match-date-venue-result {
+  padding-right: 10px;
+}
+
+.opponent-team-name {
+  font-family: Bree Serif;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.match-date {
+  font-family: Bree Serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.venue {
+  font-family: Bree Serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.result {
+  font-family: Bree Serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.opponent-logo {
+  width: 185px;
+}
+
+.match-summary-details-container {
+  text-align: end;
+}
+
+.question-field {
+  font-family: Bree Serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+.answer-field {
+  font-family: Bree Serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+@media (max-width: 1130px) {
+  .opponent-logo {
+    width: 185px;
+    margin-left: 10px;
+  }
+  .match-summary-details-container {
+    text-align: end;
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .latest-match-details-card-container {
+    background-color: #1e293b;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .opponent-team-name-match-date-venue-result-opponent-logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #475569;
+  }
+  .opponent-team-name-match-date-venue-result {
+    padding-right: 0;
+  }
+
+  .opponent-team-name {
+    font-family: Bree Serif;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 100;
+  }
+
+  .match-date {
+    font-family: Bree Serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+  .venue {
+    font-family: Bree Serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .result {
+    font-family: Bree Serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .opponent-logo {
+    width: 165px;
+  }
+
+  .match-summary-details-container {
+    text-align: left;
+  }
+
+  .question-field {
+    font-family: Bree Serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 17px;
+  }
+
+  .answer-field {
+    font-family: Bree Serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 14px;
+  }
+}

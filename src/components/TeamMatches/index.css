@@ -1,1 +1,78 @@
-/* Write your CSS here */
+.RCB {
+  background-image: linear-gradient(#d91c1f, #0f172a);
+}
+.KKR {
+  background-image: linear-gradient(#5755a7, #0f172a);
+}
+.KXP {
+  background-image: linear-gradient(#a4261d, #0f172a);
+}
+.CSK {
+  background-image: linear-gradient(#fdcb25ea, #13418b);
+}
+.RR {
+  background-image: linear-gradient(#13418b, #da237b);
+}
+.MI {
+  background-image: linear-gradient(#13418b, #d1a411ea);
+}
+.SH {
+  background-image: linear-gradient(#f26d22, #d1a411ea);
+}
+.DC {
+  background-image: linear-gradient(#13418b, #d91c1f);
+}
+
+.extra-team-matches-home-page-container {
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-matches-component-home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.team-banner {
+  width: 100%;
+}
+
+.latest-matches-text {
+  color: #ffffff;
+  font-family: Bree Serif;
+  width: 100%;
+}
+
+.recent-matches-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+  .team-matches-component-home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+}

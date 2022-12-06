@@ -27,3 +27,35 @@
   width: 46%;
   margin: 5px;
 }
+
+@media (max-width: 575px) {
+  .each-team-card-container {
+    background-color: #ffffff33;
+    border: 0.4px solid #ffffff;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+  }
+
+  .team-logo {
+    width: 50px;
+  }
+
+  .team-name {
+    font-family: Bree Serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+  }
+  .team-card-link {
+    text-decoration: none;
+    width: 46%;
+    margin: 5px;
+  }
+}

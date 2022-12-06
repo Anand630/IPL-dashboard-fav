@@ -36,3 +36,23 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 767px) {
+  .home-bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+  }
+}
+
+@media (max-width: 575px) {
+  .team-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
