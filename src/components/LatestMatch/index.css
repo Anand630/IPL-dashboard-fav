@@ -141,7 +141,9 @@
   }
 
   .opponent-logo {
-    width: 165px;
+    width: 145px;
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
 
   .match-summary-details-container {

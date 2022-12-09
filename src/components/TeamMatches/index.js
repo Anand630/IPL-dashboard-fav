@@ -54,12 +54,51 @@ class TeamMatches extends Component {
     })
   }
 
+  getWonLostCount = () => {
+    const {latestMatchDetails, recentMatchesDetails} = this.state
+    let wonCount = 0
+    let lostCount = 0
+
+    console.log(latestMatchDetails.matchStatus)
+
+    if (latestMatchDetails.matchStatus === 'Won') {
+      wonCount += 1
+    } else {
+      lostCount += 1
+    }
+
+    console.log(`1// Won: ${wonCount}, Lost: ${lostCount}`)
+
+    recentMatchesDetails.forEach(eachMatch => {
+      console.log(eachMatch.matchStatus)
+      if (eachMatch.matchStatus === 'Won') {
+        wonCount += 1
+      } else {
+        lostCount += 1
+      }
+    })
+
+    console.log(`2// Won: ${wonCount}, Lost: ${lostCount}`)
+
+    return [wonCount, lostCount]
+  }
+
   renderTeamMatches = () => {
     const {latestMatchDetails, recentMatchesDetails, teamBannerUrl} = this.state
+    const [won, lost] = this.getWonLostCount()
     console.log(recentMatchesDetails)
     return (
       <div className="team-matches-component-home-page">
         <img src={teamBannerUrl} className="team-banner" alt="team banner" />
+        <div className="won-lost-container">
+          <p className="won-text">
+            Won :<span className="won-count"> {won}</span>
+          </p>
+          <p className="vertical-line">|</p>
+          <p className="lost-text">
+            Lost :<span className="lost-count"> {lost}</span>
+          </p>
+        </div>
         <p className="latest-matches-text">Latest Matches</p>
         <LatestMatch latestMatchDetails={latestMatchDetails} />
         <ul className="recent-matches-list-container">
@@ -80,7 +119,7 @@ class TeamMatches extends Component {
     return (
       <div className={`extra-team-matches-home-page-container ${id}`}>
         {isLoading ? (
-          <div testid="loader">
+          <div>
             <Loader type="Oval" color="#ffffff" height={50} width={50} />
           </div>
         ) : (
